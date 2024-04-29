@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black_shade"
+    style="@style/AppTheme.MaterialTheme"
+    tools:context=".generate">
+
+
+    <ImageView
+        android:layout_marginTop="100dp"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_centerHorizontal="true"
+        android:background="@color/white"
+        android:id="@+id/QRshow" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/QRshow"
+        android:layout_marginTop="50dp"
+        android:id="@+id/getinpQR"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:lines="5"
+        android:hint="Enter text or link"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:textColorHint="#4D576E"
+        android:background="@color/white"
+        android:textSize="20sp" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/getinpQR"
+        android:background="@drawable/buttonrad"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="60dp"
+        android:text="Generate QR"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:textAllCaps="false"
+        android:id="@+id/genQRbut" />
+</RelativeLayout>
